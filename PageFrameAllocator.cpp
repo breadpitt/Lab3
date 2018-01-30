@@ -17,18 +17,27 @@
 PageFrameAllocator::PageFrameAllocator(uint32_t num_page_frames_) {
 
     uint32_t index = 0;
+    free_list_head = 0;
     memory.resize(num_page_frames_ * 4096);
     page_frames_total = memory.size() / 4096;
     //std::cout << memory.size() << "\n" << page_frames_total << "\n";
     page_frames_free = memory.size();
 
-    // First four bytes of each page will point to the next page
+    // Stores the free list inside memory vector. First four bytes of each page will point to the next page - may need to change to num_page_frames
     for (int i = 0; i < memory.size(); i += 4096){
-        index += 4096;
+
         memory[i] = index;
+        index++;
+
     }
     num_page_frames_ = page_frames_total;
-    std::cout <<  memory[4096] << "\n";
+
+    //free_list_head = memory[16384]; // Page frame number of the first free list page frame in the free list
+    for (int i = 0; i < memory.size(); i += 4096) {
+        std::cout << memory[i] << " ";
+    }
+    std::cout << "\n";
+    std::cout << free_list_head << "\n";
 }
 
 
@@ -39,24 +48,34 @@ bool PageFrameAllocator::Allocate(uint32_t count, std::vector<uint32_t> &page_fr
     // otherwise return true
 
 
-    if (count > num_page_frames) {
-            std::cout << "F 0\n";
-            return 1;
-        } else {
-            std::cout << "T ";
+    if (count > page_frames_total) {
+        std::cout << "F 0\n";
+        return 1;
+    } else {
+        std::cout << "T ";
         // Needs to be reworked
-            for (uint32_t i = 0; i < count; i++) {
-                page_frames.push_back(i);
-                std::cout << page_frames[i] << " ";
-            }
+        uint32_t temp = 0;
+        for (uint32_t i = 0; i < count; i++) {
+            temp = free_list_head;
+            page_frames.push_back(temp);
+            free_list_head++;
+
+         //   std::cout << free_list_head << " ";
+           // memory[free_list_head*4096] = 0;
+            //temp++;
+            //free_list_head = memory[temp*4096];
+            // free_list_head = memory[i*4096];
+         //  std::cout << page_frames[i] << " ";
+        }
         std::cout << "\n";
-        free_list_head = count*4096; // Page frame number of the first free list page frame in the free list
-        page_frames_free = page_frames_free - count*4096;
+
+        page_frames_free = page_frames_total - count;
         std::cout << page_frames_free << "\n";
+        std::cout << free_list_head << "\n";
         num_page_frames = num_page_frames - count;
 
-            return 0;
-        }
+        return 0;
+    }
 }
 
 
@@ -65,20 +84,24 @@ bool PageFrameAllocator::Deallocate(uint32_t count, std::vector<uint32_t> &page_
     // numbers popped from back of page_frame vector as returned
     // true is count <= page_frames.size()
     // otherwise false, dont free anything
-
+    uint32_t page_frame_size;
     if (count < page_frames.size()) {
         std::cout << "T ";
         for (uint32_t i = 0; i < count; i++) {
+            page_frame_size = page_frames.size() - 1;
+            free_list_head = page_frames[page_frame_size];
+            std::cout << free_list_head << "\n";
             page_frames.pop_back();
         }
 
         for (uint32_t i = 0; i < page_frames.size(); i++) {
-            std::cout << page_frames[i] << " ";
+
+           std::cout << page_frames[i] << " ";
         }
         std::cout << "\n";
         page_frames_free = page_frames_free + count*4096;
         num_page_frames = num_page_frames + count;
-        std::cout << page_frames_free << "\n";
+        //std::cout << page_frames_free << "\n";
         return 0;
     } else {
         std::cout << "F 0\n";
