@@ -32,7 +32,8 @@ public:
 
 private:
     // All the vectors
-    std::vector<uint8_t> memory; // Byte array containing page frames to be managed
+    // Had to switch this to uint32_t
+    std::vector<uint32_t> memory; // Byte array containing page frames to be managed
     std::vector<uint32_t> page_frames;
     int memory_size; // Number of pages * 4096 (0x1000)
     uint32_t num_page_frames;

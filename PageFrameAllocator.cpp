@@ -16,13 +16,19 @@
 
 PageFrameAllocator::PageFrameAllocator(uint32_t num_page_frames_) {
 
-
+    uint32_t index = 0;
     memory.resize(num_page_frames_ * 4096);
     page_frames_total = memory.size() / 4096;
     //std::cout << memory.size() << "\n" << page_frames_total << "\n";
     page_frames_free = memory.size();
+
+    // First four bytes of each page will point to the next page
+    for (int i = 0; i < memory.size(); i += 4096){
+        index += 4096;
+        memory[i] = index;
+    }
     num_page_frames_ = page_frames_total;
-    std::cout << page_frames_free << "\n";
+    std::cout <<  memory[4096] << "\n";
 }
 
 
