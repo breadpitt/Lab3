@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/rzach/Downloads/Lab3-master (1)/Lab3-master/PageFrameAllocator.cpp
+PageFrameAllocator.h
+/cygdrive/c/Users/rzach/Downloads/Lab3-master (1)/Lab3-master/PageFrameAllocator.h
+fstream
+-
+string
+-
+vector
+-
+iomanip
+-
+iostream
+-
+stdio.h
+-
+string.h
+-
+
+/cygdrive/c/Users/rzach/Downloads/Lab3-master (1)/Lab3-master/PageFrameAllocator.h
+iostream
+-
+string
+-
+vector
+-
+fstream
+-
+sstream
+-
+
+/cygdrive/c/Users/rzach/Downloads/Lab3-master (1)/Lab3-master/main.cpp
+iostream
+-
+fstream
+-
+PageFrameAllocator.h
+/cygdrive/c/Users/rzach/Downloads/Lab3-master (1)/Lab3-master/PageFrameAllocator.h
+

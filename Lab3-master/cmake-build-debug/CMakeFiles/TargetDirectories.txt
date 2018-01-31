@@ -1,0 +1,3 @@
+/cygdrive/c/Users/rzach/Downloads/Lab3-master (1)/Lab3-master/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/c/Users/rzach/Downloads/Lab3-master (1)/Lab3-master/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/c/Users/rzach/Downloads/Lab3-master (1)/Lab3-master/cmake-build-debug/CMakeFiles/OSLab3.dir
