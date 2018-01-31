@@ -10,6 +10,7 @@
 #include <string>
 #include <vector>
 #include <fstream>
+#include <sstream>
 
 class PageFrameAllocator {
 public:
@@ -19,6 +20,7 @@ public:
 
     // Rule of Five
         // think this is right? you should check
+        // I think this is right
     PageFrameAllocator(PageFrameAllocator &orig) = delete; // copy
     PageFrameAllocator(PageFrameAllocator &&orig) = delete; // move
     PageFrameAllocator operator=(PageFrameAllocator &orig) = delete; // copy assignment? Forgot what its called
@@ -30,12 +32,12 @@ public:
 
     // Assorted
     void Print(std::ofstream &inFile);
-    void Read(std::string line, std::vector<uint16_t> line_values);
+    bool Read(std::string &line, std::vector<uint32_t > &input_vector, std::vector<uint32_t > &page_frame_count);
 
 
 private:
     // set everything at start = 0
-    std::fstream inputFile;
+    std::ifstream inFile;
     std::vector<uint32_t> memory; // Byte array containing page frames to be managed
     int memory_size = 0; // Number of pages * 4096 (0x1000)
     std::vector<uint32_t> page_frames;
@@ -48,8 +50,9 @@ private:
     uint32_t free_list_head = 0; // Page frame number of first page frame in the free list
 
     // Out put stuff
-    std::string line;
-    std::vector<uint16_t> line_values;
+    std::string &line;
+    std::vector<uint32_t > page_frame_count;
+    std::vector<uint32_t > &input_vector;
     int read = 0;
     int count = 0;
     int line_number = 0;

@@ -22,7 +22,7 @@ PageFrameAllocator::PageFrameAllocator(int num_page_frames) {
 
     memory_size = num_page_frames * 0x1000;
     memory.resize(memory_size, 0); // sets memory
-
+    std::cout << "hello world";
     // talked with an undergrad group and they recommended this thing
         // copies memory and such
     memcpy(&memory[0], &free_list_head, sizeof(uint32_t));
@@ -41,6 +41,20 @@ PageFrameAllocator::PageFrameAllocator(int num_page_frames) {
 
     num_page_frames = page_frames_free;
     num_page_frames = page_frames_total;
+/*
+   The idea was to take the parsed data and pass the second value it into the alloc/dealloc functions if the first value
+   was 0 or 1 and to use our print function if it was 2. It did not work.
+   while (Read(line, input_vector, page_frame_count)){
+       if (input_vector[0] == 0){
+         allocate(input_vector[1], page_frames);
+      }
+       if (input_vector[0] == 1){
+           deallocate(input_vector[1], page_frames);
+       }
+       if (input_vector[0] == 2){
+           print function;
+       }
+   } */
 
 
 }
@@ -82,26 +96,38 @@ bool PageFrameAllocator::Deallocate(uint32_t count, std::vector<uint32_t> &page_
         }
         return true; // think will said was better form to use true and false than 1 and 0
     } else {
+        std::cerr << "Error Reading File \n ";
         return false;
     }
 }
 
-// Parse file function like from lab 2, using uint16_t because hopefully that will grab the first two bytes of the line and store them, then the next two bytes
-void PageFrameAllocator::Read(std::string line, std::vector<uint16_t> line_values){
-    line_values.clear();
+// Parses the file line by line into a vector that can be processed in the PageFrameAllocator function (didn't get
+// it working but that was the idea)
+
+bool PageFrameAllocator::Read(std::string &line, std::vector<uint32_t> &input_vector,  std::vector<uint32_t > &page_frame_count){
+    page_frame_count.clear();
     line.clear();
+    // Since the first line has already been read, skip reading it
+    if (std::getline(inFile, line)){
+        ++line_number;
+        if (line_number != 1) {
+            std::istringstream lineStream(line);
 
-    if (std::getline(inputFile, line)){
+            uint32_t input;
+            lineStream >> std::hex >> input;
+            input_vector.push_back(input);
 
-        std::istringstream lineStream(line);
-        uint16_t arg;
-        while (lineStream >> std::hex >> arg){
-            line_values.push_back(arg);
+
+        } else {
+            // Already read first line so do nothing
         }
+        return true;
+    }   else {
+        std::cerr << "Stringstream error\n";
     }
 
 }
-/*
+
 void PageFrameAllocator::Print(std::ofstream &inFile) {
     // 1 to allocate page frames
     // second value
@@ -155,4 +181,3 @@ void PageFrameAllocator::Print(std::ofstream &inFile) {
         }
     }
 }
- */
