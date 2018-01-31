@@ -9,36 +9,47 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <fstream>
 
 class PageFrameAllocator {
 public:
 
-    // I copied a lot from the lab 2 file as a outline of what to do
+    PageFrameAllocator(int num_page_frames);
+    ~PageFrameAllocator(){};
 
-    // Constructor, open file
-    PageFrameAllocator(uint32_t num_page_frames_);
-    // Destructor, close file
-   // virtual ~PageFrameAllocator(void);
+    // Rule of Five
+        // think this is right? you should check
+    PageFrameAllocator(PageFrameAllocator &orig) = delete; // copy
+    PageFrameAllocator(PageFrameAllocator &&orig) = delete; // move
+    PageFrameAllocator operator=(PageFrameAllocator &orig) = delete; // copy assignment? Forgot what its called
+    PageFrameAllocator operator=(PageFrameAllocator &&orig) = delete; // move ^ same...
 
-    // Other Constructors
-
-   // PageFrameAllocator(uint32_t num_page_frames) = delete;
+    // Allocation
     bool Allocate(uint32_t count, std::vector<uint32_t> &page_frames);
     bool Deallocate(uint32_t count, std::vector<uint32_t> &page_frames);
 
+    // Assorted
+    void Print(std::ofstream &inFile);
 
-    // Reads and process info from file
-    void Execute(void);
+
 
 private:
-    // All the vectors
-    std::vector<uint8_t> memory; // Byte array containing page frames to be managed
+    // set everything at start = 0
+    std::vector<uint32_t> memory; // Byte array containing page frames to be managed
+    int memory_size = 0; // Number of pages * 4096 (0x1000)
     std::vector<uint32_t> page_frames;
-    int memory_size; // Number of pages * 4096 (0x1000)
-    uint32_t num_page_frames;
-    uint32_t page_frames_total; // Count of total number of page frames in memory
-    uint32_t page_frames_free; // Current number of free page frames
-    uint32_t free_list_head; // Page frame number of first page frame in the free list (0xFFFFFFFF if list is empty
+    uint32_t num_page_frames = 0;
+    uint32_t index = 0;
+    uint32_t index2 = 0;
+
+    uint32_t page_frames_total = 0; // Count of total number of page frames in memory
+    uint32_t page_frames_free = 0; // Current number of free page frames
+    uint32_t free_list_head = 0; // Page frame number of first page frame in the free list
+
+    // Out put stuff
+    int read = 0;
+    int count = 0;
+    int line_number = 0;
 };
 
 
