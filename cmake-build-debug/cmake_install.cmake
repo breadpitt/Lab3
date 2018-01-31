@@ -1,4 +1,4 @@
-# Install script for directory: /cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0
+# Install script for directory: /cygdrive/c/Users/jasha/CLionProjects/Lab3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

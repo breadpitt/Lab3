@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="OSLab3">
-				<Option output="/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/OSLab3.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/OSLab3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,15 +52,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 OSLab3"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 OSLab3"/>
+					<CompileFile command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="OSLab3/fast">
-				<Option output="/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/OSLab3.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/OSLab3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -73,23 +73,23 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 OSLab3/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 OSLab3/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/PageFrameAllocator.cpp">
+		<Unit filename="/cygdrive/c/Users/jasha/CLionProjects/Lab3/PageFrameAllocator.cpp">
 			<Option target="OSLab3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/PageFrameAllocator.h">
+		<Unit filename="/cygdrive/c/Users/jasha/CLionProjects/Lab3/PageFrameAllocator.h">
 			<Option target="OSLab3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/main.cpp">
+		<Unit filename="/cygdrive/c/Users/jasha/CLionProjects/Lab3/main.cpp">
 			<Option target="OSLab3"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/jasha/CLionProjects/Lab3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

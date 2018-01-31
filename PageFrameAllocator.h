@@ -30,11 +30,12 @@ public:
 
     // Assorted
     void Print(std::ofstream &inFile);
-
+    void Read(std::string line, std::vector<uint16_t> line_values);
 
 
 private:
     // set everything at start = 0
+    std::fstream inputFile;
     std::vector<uint32_t> memory; // Byte array containing page frames to be managed
     int memory_size = 0; // Number of pages * 4096 (0x1000)
     std::vector<uint32_t> page_frames;
@@ -47,6 +48,8 @@ private:
     uint32_t free_list_head = 0; // Page frame number of first page frame in the free list
 
     // Out put stuff
+    std::string line;
+    std::vector<uint16_t> line_values;
     int read = 0;
     int count = 0;
     int line_number = 0;

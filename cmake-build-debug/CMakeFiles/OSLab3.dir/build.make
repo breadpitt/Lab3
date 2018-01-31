@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/rzach/.CLion2017.2/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /cygdrive/c/Users/jasha/.CLion2017.2/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/rzach/.CLion2017.2/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /cygdrive/c/Users/jasha/.CLion2017.2/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/jasha/CLionProjects/Lab3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/OSLab3.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/OSLab3.dir/flags.make
 
 CMakeFiles/OSLab3.dir/main.cpp.o: CMakeFiles/OSLab3.dir/flags.make
 CMakeFiles/OSLab3.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OSLab3.dir/main.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OSLab3.dir/main.cpp.o -c /cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OSLab3.dir/main.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OSLab3.dir/main.cpp.o -c /cygdrive/c/Users/jasha/CLionProjects/Lab3/main.cpp
 
 CMakeFiles/OSLab3.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OSLab3.dir/main.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/main.cpp > CMakeFiles/OSLab3.dir/main.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/jasha/CLionProjects/Lab3/main.cpp > CMakeFiles/OSLab3.dir/main.cpp.i
 
 CMakeFiles/OSLab3.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OSLab3.dir/main.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/main.cpp -o CMakeFiles/OSLab3.dir/main.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/jasha/CLionProjects/Lab3/main.cpp -o CMakeFiles/OSLab3.dir/main.cpp.s
 
 CMakeFiles/OSLab3.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/OSLab3.dir/main.cpp.o.provides.build: CMakeFiles/OSLab3.dir/main.cpp.
 
 CMakeFiles/OSLab3.dir/PageFrameAllocator.cpp.o: CMakeFiles/OSLab3.dir/flags.make
 CMakeFiles/OSLab3.dir/PageFrameAllocator.cpp.o: ../PageFrameAllocator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OSLab3.dir/PageFrameAllocator.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OSLab3.dir/PageFrameAllocator.cpp.o -c /cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/PageFrameAllocator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OSLab3.dir/PageFrameAllocator.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OSLab3.dir/PageFrameAllocator.cpp.o -c /cygdrive/c/Users/jasha/CLionProjects/Lab3/PageFrameAllocator.cpp
 
 CMakeFiles/OSLab3.dir/PageFrameAllocator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OSLab3.dir/PageFrameAllocator.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/PageFrameAllocator.cpp > CMakeFiles/OSLab3.dir/PageFrameAllocator.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/jasha/CLionProjects/Lab3/PageFrameAllocator.cpp > CMakeFiles/OSLab3.dir/PageFrameAllocator.cpp.i
 
 CMakeFiles/OSLab3.dir/PageFrameAllocator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OSLab3.dir/PageFrameAllocator.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/PageFrameAllocator.cpp -o CMakeFiles/OSLab3.dir/PageFrameAllocator.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/jasha/CLionProjects/Lab3/PageFrameAllocator.cpp -o CMakeFiles/OSLab3.dir/PageFrameAllocator.cpp.s
 
 CMakeFiles/OSLab3.dir/PageFrameAllocator.cpp.o.requires:
 
@@ -117,7 +117,7 @@ OSLab3.exe: CMakeFiles/OSLab3.dir/main.cpp.o
 OSLab3.exe: CMakeFiles/OSLab3.dir/PageFrameAllocator.cpp.o
 OSLab3.exe: CMakeFiles/OSLab3.dir/build.make
 OSLab3.exe: CMakeFiles/OSLab3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable OSLab3.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable OSLab3.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OSLab3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -135,6 +135,6 @@ CMakeFiles/OSLab3.dir/clean:
 .PHONY : CMakeFiles/OSLab3.dir/clean
 
 CMakeFiles/OSLab3.dir/depend:
-	cd /cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0 /cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0 /cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug /cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug /cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/CMakeFiles/OSLab3.dir/DependInfo.cmake --color=$(COLOR)
+	cd /cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/c/Users/jasha/CLionProjects/Lab3 /cygdrive/c/Users/jasha/CLionProjects/Lab3 /cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug /cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug /cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/CMakeFiles/OSLab3.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/OSLab3.dir/depend
 

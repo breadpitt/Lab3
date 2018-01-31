@@ -42,15 +42,6 @@ PageFrameAllocator::PageFrameAllocator(int num_page_frames) {
     num_page_frames = page_frames_free;
     num_page_frames = page_frames_total;
 
-    /*
-    // First four bytes of each page will point to the next page
-    for (int i = 0; i < memory.size(); i += 4096){
-        index += 4096;
-        memory[i] = index;
-    }
-    num_page_frames = page_frames_total;
-    std::cout <<  memory[4096] << "\n";
-    */
 
 }
 
@@ -95,8 +86,22 @@ bool PageFrameAllocator::Deallocate(uint32_t count, std::vector<uint32_t> &page_
     }
 }
 
+// Parse file function like from lab 2, using uint16_t because hopefully that will grab the first two bytes of the line and store them, then the next two bytes
+void PageFrameAllocator::Read(std::string line, std::vector<uint16_t> line_values){
+    line_values.clear();
+    line.clear();
 
+    if (std::getline(inputFile, line)){
 
+        std::istringstream lineStream(line);
+        uint16_t arg;
+        while (lineStream >> std::hex >> arg){
+            line_values.push_back(arg);
+        }
+    }
+
+}
+/*
 void PageFrameAllocator::Print(std::ofstream &inFile) {
     // 1 to allocate page frames
     // second value
@@ -116,6 +121,7 @@ void PageFrameAllocator::Print(std::ofstream &inFile) {
         std::cout << ">" << read << "\n";
 
         // First value
+
             // deallocate
         if(read == 0) {
             inFile << count;
@@ -131,10 +137,10 @@ void PageFrameAllocator::Print(std::ofstream &inFile) {
             // allocate
         if(read == 1) {
             inFile << count;
-            bool free_space = page_frames_print->Allocate(count, page_frames);
+            bool free_space = Allocate(count, page_frames);
             if(free_space) {
                 // I dont understand the whole -> but its in my notes
-                std::cout << " T " << page_frames_print->page_frames_free << "\n";
+                std::cout << " T " <<  "\n";
             }
             if(!free_space) {
                 std::cout << " F " << page_frames_print->page_frames_free << "\n";
@@ -148,5 +154,5 @@ void PageFrameAllocator::Print(std::ofstream &inFile) {
             std::cout << "\n";
         }
     }
-
 }
+ */

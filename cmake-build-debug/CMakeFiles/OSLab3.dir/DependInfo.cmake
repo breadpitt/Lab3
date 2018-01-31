@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/PageFrameAllocator.cpp" "/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/CMakeFiles/OSLab3.dir/PageFrameAllocator.cpp.o"
-  "/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/main.cpp" "/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/cmake-build-debug/CMakeFiles/OSLab3.dir/main.cpp.o"
+  "/cygdrive/c/Users/jasha/CLionProjects/Lab3/PageFrameAllocator.cpp" "/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/CMakeFiles/OSLab3.dir/PageFrameAllocator.cpp.o"
+  "/cygdrive/c/Users/jasha/CLionProjects/Lab3/main.cpp" "/cygdrive/c/Users/jasha/CLionProjects/Lab3/cmake-build-debug/CMakeFiles/OSLab3.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

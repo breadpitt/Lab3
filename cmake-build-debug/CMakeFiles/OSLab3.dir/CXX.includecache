@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/PageFrameAllocator.cpp
+/cygdrive/c/Users/jasha/CLionProjects/Lab3/PageFrameAllocator.cpp
 PageFrameAllocator.h
-/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/PageFrameAllocator.h
+/cygdrive/c/Users/jasha/CLionProjects/Lab3/PageFrameAllocator.h
 fstream
 -
 string
@@ -24,7 +24,7 @@ stdio.h
 string.h
 -
 
-/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/PageFrameAllocator.h
+/cygdrive/c/Users/jasha/CLionProjects/Lab3/PageFrameAllocator.h
 iostream
 -
 string
@@ -34,11 +34,11 @@ vector
 fstream
 -
 
-/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/main.cpp
+/cygdrive/c/Users/jasha/CLionProjects/Lab3/main.cpp
 iostream
 -
 fstream
 -
 PageFrameAllocator.h
-/cygdrive/c/Users/rzach/Downloads/Lab3-Lab3v1.0/Lab3-Lab3v1.0/PageFrameAllocator.h
+/cygdrive/c/Users/jasha/CLionProjects/Lab3/PageFrameAllocator.h
 
